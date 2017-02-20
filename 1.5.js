@@ -1,22 +1,19 @@
 'use strict';
-
-let numbers =[1, 2, 3, 4, 5, 6, 7];
-let myNumber = 13;
-
-
-function twoSums(arr, int){
-  //find two different items in array
-  //when added gives 'int'
-  //return arr of these numbers
-  //input: [1, 2, 3, 4, 5, 6, 7], 13
-  //output: [5,6]
-
-
+function twoSums(arr, int) {
+  var result = [];
+  for(let i = 0; i < arr.length; i++) {
+    for(let j=0; j<arr.length-1; j++){
+      if (arr[j]+arr[j+1] === int){
+        let idx1 = arr.indexOf(arr[j]);
+        let idx2 = arr.indexOf(arr[j+1]);
+        result = [idx1, idx2];
+      } 
+    }
+  }
+  return result;
 }
-
-
-
-
+console.log(twoSums([1, 2, 3, 4, 5, 6, 7], 11));
+module.exports = twoSums;
 
 
 
