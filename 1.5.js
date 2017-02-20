@@ -7,12 +7,13 @@ function twoSums(arr, int) {
         let idx1 = arr.indexOf(arr[j]);
         let idx2 = arr.indexOf(arr[j+1]);
         result = [idx1, idx2];
-      } 
+      }
     }
   }
   return result;
 }
-console.log(twoSums([1, 2, 3, 4, 5, 6, 7], 11));
+
+console.log(twoSums([1,2,3],13));
 module.exports = twoSums;
 
 
