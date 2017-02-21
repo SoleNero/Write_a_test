@@ -13,7 +13,6 @@ function twoSums(arr, int) {
   return result;
 }
 
-console.log(twoSums([1,2,3],13));
 module.exports = twoSums;
 
 
